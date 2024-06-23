@@ -3,6 +3,19 @@
 /* ************************************ */
 /* ********** General Styles ********** */
 /* ************************************ */
+:root {
+  /* Primary Colors */
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+
+  /* Neutral Colors */
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
 
 *{
   margin: 0;
@@ -24,7 +37,9 @@ h3{
 h4{
   font-size: 22px;
 }
-
+b{
+  color: var(--wenge-brown);
+}
 
 /* ************************************ */
 /* ********* Reusable Styles ********** */
@@ -53,31 +68,47 @@ h4{
 /* ************************************ */
 /* ********* Container Styles ********* */
 /* ************************************ */
+
+/* ***** SEC: ALL ***** */
+main > div h3{
+  color: var(--nutmeg);
+  margin-bottom: 16px;
+}
+
+main > div > *{
+  margin: 30px auto;
+  background-color: rgb(209, 218, 226);
+  margin: 20px 5vw 0px;
+  gap: 30px;
+}
+
+/* ***** SEC: IMG ***** */
 main > div:first-child > img{
   margin: 0 0 30px;
   position: relative
 }
 
-main > div > *{
-  margin: 30px auto;
-  background-color: rgb(37, 105, 164);
-  margin: 0 5vw;
-  gap: 30px;
-}
-
+/* ***** SEC: INTRO ***** */
 main > div div.intro-sub-ctn{
-  background-color: rgb(228, 184, 184);
+  background-color: var(--rose-white);
   padding: 25px 20px;
   border-radius: 10px;
 }
 
 main > div div.intro-sub-ctn > h4{
-  color: rgb(118, 40, 40);
+  color: var(--dark-raspberry);
 }
 
-main > div h3{
-  color: rgb(243, 109, 36);
-  margin-bottom: 16px;
+/* ***** SEC: LISTS ***** */
+section > * > li {
+  padding: 5px 20px;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+section > * > li::marker {
+  color: var(--nutmeg);
+  font-weight: 600;
 }
 
 
@@ -85,19 +116,6 @@ main > div h3{
 /* ********** Tabular Styles ********** */
 /* ************************************ */
 
-/* .item{
-  justify-content: space-between;
-  margin: 0 15%;
-}
-
-.item > *{
-  margin: 12px 0;
-}
-
-.item > *.value{
-  font-weight: bold;
-  text-align: left;
-} */
 
 .table-ctn {
   display: flex;
@@ -125,6 +143,6 @@ main > div h3{
 hr {
   width: 100%;
   border: none;
-  border-top: 1px solid #ccc; /* Adjust style as needed */
+  border-top: 1px solid grey; /* Adjust style as needed */
   margin: 0; /* Adjust margin as needed */
 }
