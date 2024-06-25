@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+  font-family: "Outfit", sans-serif, sans-serif;
+}
+@media only screen and (max-width: 576px) {
+  body {
+    min-width: 260px;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 900px) {
+  body {
+    max-width: 900px;
+    margin: 4rem auto;
+    background-color: hsl(30, 54%, 90%);
+  }
+}
+
+h2 {
+  font-size: 38px;
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+h3 {
+  font-size: 28px;
+  font-family: "Young Serif", serif;
+  font-weight: 500;
+  color: hsl(14, 45%, 36%);
+}
+
+h4 {
+  font-size: 22px;
+}
+
+b {
+  color: hsl(30, 10%, 34%);
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.row,
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-18 {
+  margin-bottom: 18px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+#attribution {
+  font-size: 0.75rem;
+  text-align: center;
+  opacity: 0.4;
+}
+#attribution a {
+  color: hsl(228, 68%, 67%);
+}
+#attribution:hover {
+  opacity: 0.9;
+}
+
+main > div {
+  background-color: hsl(0, 0%, 100%);
+}
+@media only screen and (min-width: 900px) {
+  main > div {
+    border-radius: 0 0 2rem 2rem;
+  }
+}
+main > div > section {
+  margin: 20px 6vw 28px;
+}
+@media only screen and (min-width: 900px) {
+  main > div > section {
+    margin: 20px auto 24px;
+    width: 800px;
+  }
+}
+main > div:first-child {
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 900px) {
+  main > div:first-child {
+    border-radius: 2rem 2rem 0 0;
+  }
+}
+main > div:first-child > img {
+  margin: 0 0 30px;
+}
+@media only screen and (min-width: 900px) {
+  main > div:first-child > img {
+    border-radius: 0.5rem;
+    width: 90%;
+    margin: 30px;
+  }
+}
+main > div #intro-sub-ctn {
+  background-color: hsl(330, 100%, 98%);
+  padding: 25px 20px;
+  border-radius: 10px;
+}
+main > div #intro-sub-ctn h4 {
+  color: hsl(332, 51%, 32%);
+}
+main > div #intro-sub-ctn ul > li::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+section li {
+  padding: 4px 15px;
+  font-size: 0.95rem;
+}
+section li b {
+  font-size: 0.925rem;
+}
+section > * > li {
+  padding: 5px 15px;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+section > * > li::marker {
+  color: hsl(14, 45%, 36%);
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+section ul > li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+section#food-nutrition .item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 35px;
+}
+
+.label {
+  flex: 1;
+  text-align: left;
+}
+
+.value {
+  flex: 0.75;
+  text-align: left;
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid hsl(30, 18%, 87%);
+  margin: 20px 0;
+}
+
+#food-nutrition hr {
+  margin: 5px 0;
+}
+
+.divider {
+  width: 87.5%;
+  margin: 25px auto;
+}
+@media only screen and (min-width: 900px) {
+  .divider {
+    width: 89%;
+  }
+}/*# sourceMappingURL=styles.css.map */
